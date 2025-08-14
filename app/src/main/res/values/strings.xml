@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Integrales App</string>
+    
+    <!-- Main Activity -->
+    <string name="title_main">Calculadora de Integrales</string>
+    <string name="hint_enter_function">Ingresa la función a integrar</string>
+    <string name="btn_solve">Resolver Integral</string>
+    <string name="btn_camera">Tomar Foto</string>
+    <string name="btn_gallery">Galería</string>
+    <string name="btn_graph">Ver Gráfica</string>
+    
+    <!-- Integration Methods -->
+    <string name="method_substitution">Sustitución</string>
+    <string name="method_parts">Por Partes</string>
+    <string name="method_definite">Definida</string>
+    <string name="method_trigonometric">Trigonométrica</string>
+    <string name="method_trig_substitution">Sustitución Trigonométrica</string>
+    
+    <!-- Results -->
+    <string name="result_title">Resultado</string>
+    <string name="result_indefinite">Integral Indefinida:</string>
+    <string name="result_definite">Integral Definida:</string>
+    <string name="result_steps">Pasos de Resolución:</string>
+    <string name="error_invalid_function">Función inválida</string>
+    <string name="error_calculation">Error en el cálculo</string>
+    
+    <!-- Camera -->
+    <string name="camera_title">Tomar Foto</string>
+    <string name="camera_capture">Capturar</string>
+    <string name="camera_retake">Volver a tomar</string>
+    <string name="camera_use">Usar Foto</string>
+    
+    <!-- Permissions -->
+    <string name="permission_camera_required">Se requiere permiso de cámara</string>
+    <string name="permission_storage_required">Se requiere permiso de almacenamiento</string>
+    
+    <!-- Graph -->
+    <string name="graph_title">Gráfica de la Función</string>
+    <string name="graph_original">Función Original</string>
+    <string name="graph_integral">Integral</string>
+    
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="loading">Cargando...</string>
+</resources>
+

@@ -1,0 +1,170 @@
+{
+  "YaVersion": "224",
+  "Source": "Form",
+  "Properties": {
+    "$Name": "Screen1",
+    "$Type": "Form",
+    "$Version": "35",
+    "AlignHorizontal": "3",
+    "AlignVertical": "2",
+    "AppName": "Calculadora de Integrales",
+    "BackgroundColor": "&HFF2196F3",
+    "BackgroundImage": "",
+    "CloseScreenAnimation": "fade",
+    "Icon": "integral_icon.png",
+    "OpenScreenAnimation": "fade",
+    "PrimaryColor": "&HFF2196F3",
+    "ScreenOrientation": "portrait",
+    "Scrollable": "False",
+    "ShowStatusBar": "False",
+    "Title": "Calculadora de Integrales",
+    "TitleVisible": "True",
+    "Uuid": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+    "$Components": [
+      {
+        "$Name": "VerticalArrangement1",
+        "$Type": "VerticalArrangement",
+        "$Version": "4",
+        "AlignHorizontal": "3",
+        "AlignVertical": "2",
+        "BackgroundColor": "&HFFFFFFFF",
+        "Height": "Fill parent",
+        "Width": "Fill parent",
+        "Uuid": "q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2",
+        "$Components": [
+          {
+            "$Name": "Label1",
+            "$Type": "Label",
+            "$Version": "6",
+            "FontBold": "True",
+            "FontSize": "24",
+            "Height": "50",
+            "Text": "Calculadora de Integrales",
+            "TextColor": "&HFF2196F3",
+            "Uuid": "g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8"
+          },
+          {
+            "$Name": "HorizontalArrangement1",
+            "$Type": "HorizontalArrangement",
+            "$Version": "4",
+            "AlignHorizontal": "3",
+            "Height": "50",
+            "Width": "Fill parent",
+            "Uuid": "w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5",
+            "$Components": [
+              {
+                "$Name": "RadioButton1",
+                "$Type": "RadioButton",
+                "$Version": "1",
+                "Text": "Indefinida",
+                "Uuid": "n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1"
+              },
+              {
+                "$Name": "RadioButton2",
+                "$Type": "RadioButton",
+                "$Version": "1",
+                "Text": "Definida",
+                "Uuid": "d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7"
+              }
+            ]
+          },
+          {
+            "$Name": "TextBox1",
+            "$Type": "TextBox",
+            "$Version": "9",
+            "Hint": "Ingresa la función (ej: x^2, sin(x), e^x)",
+            "Height": "60",
+            "MultiLine": "True",
+            "Text": "",
+            "Uuid": "t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4"
+          },
+          {
+            "$Name": "HorizontalArrangement2",
+            "$Type": "HorizontalArrangement",
+            "$Version": "4",
+            "AlignHorizontal": "3",
+            "Height": "50",
+            "Width": "Fill parent",
+            "Uuid": "k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z0a1b2",
+            "$Components": [
+              {
+                "$Name": "TextBox2",
+                "$Type": "TextBox",
+                "$Version": "9",
+                "Hint": "Límite inferior",
+                "Width": "40 percent",
+                "Uuid": "c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9"
+              },
+              {
+                "$Name": "TextBox3",
+                "$Type": "TextBox",
+                "$Version": "9",
+                "Hint": "Límite superior",
+                "Width": "40 percent",
+                "Uuid": "t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5"
+              }
+            ]
+          },
+          {
+            "$Name": "Button1",
+            "$Type": "Button",
+            "$Version": "7",
+            "BackgroundColor": "&HFF2196F3",
+            "FontBold": "True",
+            "FontSize": "18",
+            "Height": "60",
+            "Text": "Resolver Integral",
+            "TextColor": "&HFFFFFFFF",
+            "Uuid": "j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3"
+          },
+          {
+            "$Name": "Button2",
+            "$Type": "Button",
+            "$Version": "7",
+            "BackgroundColor": "&HFF4CAF50",
+            "FontBold": "True",
+            "Height": "50",
+            "Text": "Tomar Foto",
+            "TextColor": "&HFFFFFFFF",
+            "Uuid": "b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1"
+          },
+          {
+            "$Name": "Label2",
+            "$Type": "Label",
+            "$Version": "6",
+            "FontBold": "True",
+            "FontSize": "16",
+            "Height": "30",
+            "Text": "Resultado:",
+            "TextColor": "&HFF2196F3",
+            "Uuid": "t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9"
+          },
+          {
+            "$Name": "TextBox4",
+            "$Type": "TextBox",
+            "$Version": "9",
+            "BackgroundColor": "&HFFF5F5F5",
+            "FontSize": "14",
+            "Height": "200",
+            "MultiLine": "True",
+            "ReadOnly": "True",
+            "Text": "",
+            "Uuid": "l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7"
+          }
+        ]
+      },
+      {
+        "$Name": "Camera1",
+        "$Type": "Camera",
+        "$Version": "4",
+        "Uuid": "d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6"
+      },
+      {
+        "$Name": "TinyDB1",
+        "$Type": "TinyDB",
+        "$Version": "2",
+        "Uuid": "w7x8y9z0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5"
+      }
+    ]
+  }
+}

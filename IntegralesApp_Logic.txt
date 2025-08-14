@@ -1,0 +1,69 @@
+LÓGICA DE LA APLICACIÓN DE INTEGRALES PARA APP INVENTOR
+
+=== BLOQUES DE PROGRAMACIÓN ===
+
+1. AL HACER CLIC EN "RESOLVER INTEGRAL":
+   - Obtener función del TextBox1
+   - Verificar si es indefinida o definida (RadioButton1 o RadioButton2)
+   - Si es definida, obtener límites de TextBox2 y TextBox3
+   - Llamar a función resolver_integral
+   - Mostrar resultado en TextBox4
+
+2. AL HACER CLIC EN "TOMAR FOTO":
+   - Abrir cámara
+   - Tomar foto
+   - Procesar imagen para extraer texto
+   - Poner texto extraído en TextBox1
+
+3. FUNCIÓN resolver_integral(función, tipo, límite_inf, límite_sup):
+   - Limpiar función (quitar espacios, convertir a minúsculas)
+   - Determinar tipo de integral
+   - Aplicar reglas de integración
+   - Retornar resultado con pasos
+
+=== REGLAS DE INTEGRACIÓN ===
+
+1. INTEGRALES DIRECTAS:
+   - ∫x dx = x²/2 + C
+   - ∫x² dx = x³/3 + C
+   - ∫x³ dx = x⁴/4 + C
+   - ∫1/x dx = ln|x| + C
+   - ∫e^x dx = e^x + C
+
+2. TRIGONOMÉTRICAS:
+   - ∫sin(x) dx = -cos(x) + C
+   - ∫cos(x) dx = sin(x) + C
+   - ∫tan(x) dx = -ln|cos(x)| + C
+
+3. POLINOMIOS:
+   - ∫(x² + 2x + 1) dx = x³/3 + x² + x + C
+   - ∫(x³ + x²) dx = x⁴/4 + x³/3 + C
+
+4. POR PARTES:
+   - ∫x*ln(x) dx = x²*ln(x)/2 - x²/4 + C
+   - ∫x*e^x dx = x*e^x - e^x + C
+
+5. SUSTITUCIÓN:
+   - ∫(2x+1) dx = (2x+1)²/4 + C
+   - ∫(x+1) dx = (x+1)²/2 + C
+
+=== EJEMPLOS DE USO ===
+
+Entrada: x^2
+Resultado: ∫x² dx = x³/3 + C
+
+Entrada: sin(x)
+Resultado: ∫sin(x) dx = -cos(x) + C
+
+Entrada: x^2+2*x+1
+Resultado: ∫(x² + 2x + 1) dx = x³/3 + x² + x + C
+
+Entrada: x*ln(x)
+Resultado: ∫x*ln(x) dx = x²*ln(x)/2 - x²/4 + C
+
+=== INTEGRALES DEFINIDAS ===
+
+Para integrales definidas, evaluar la antiderivada en los límites:
+∫[a,b] f(x) dx = F(b) - F(a)
+
+Ejemplo: ∫[0,1] x² dx = (1³/3) - (0³/3) = 1/3
