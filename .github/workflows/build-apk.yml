@@ -38,22 +38,3 @@ jobs:
       with:
         name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
-    
-    - name: Create Release
-      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-      uses: softprops/action-gh-release@v1
-      with:
-        files: app/build/outputs/apk/debug/app-debug.apk
-        tag_name: v1.0.0
-        name: Calculadora de Integrales v1.0.0
-        body: |
-          APK de la Calculadora de Integrales
-          
-          Funcionalidades:
-          - Resolución de integrales indefinidas y definidas
-          - Soporte para funciones trigonométricas
-          - Reconocimiento de imágenes con ML Kit
-          - Gráficas de funciones
-          - Pasos detallados de resolución
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
